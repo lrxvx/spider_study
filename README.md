@@ -1,3 +1,5 @@
-## LeetCode解题
+## Python爬虫学习
 
-用于练习LeetCode和常见数据结构、算法代码
+*   爬虫原理
+*   基础爬虫知识
+*   requests模块
