@@ -14,10 +14,12 @@ BOT_NAME = 'myScrapySpider'
 SPIDER_MODULES = ['myScrapySpider.spiders']
 NEWSPIDER_MODULE = 'myScrapySpider.spiders'
 
-LOG_LEVEL = "WARNGING"
+LOG_LEVEL = "WARNING"
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'myScrapySpider (+http://www.yourdomain.com)'
-
+USER_AGENT = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) ' \
+             'AppleWebKit/537.36 (KHTML, like Gecko) ' \
+             'Chrome/49.0.2623.87 Safari/537.36'
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
 
