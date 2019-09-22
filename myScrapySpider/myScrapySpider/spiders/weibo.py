@@ -7,7 +7,7 @@ import logging
 import datetime
 import requests
 from lxml import etree
-from myScrapySpider.myScrapySpider.weiboID import weiboID
+from myScrapySpider.myScrapySpider.weiboID import weiboIDs
 from scrapy.http import Request
 from myScrapySpider.myScrapySpider.items import InformationItem
 
@@ -16,7 +16,7 @@ class WeiboSpider(scrapy.Spider):
     proxies = {"http":"http://116.52.133.174:36465"}
     allowed_domains = ["weibo.com"]
     # start_urls = ['http://weibo.com/']
-    start_urls = list(set(weiboID))
+    start_urls = list(set(weiboIDs))
 
     # def start_requests(self):
     #     for uid in self.start_urls:
